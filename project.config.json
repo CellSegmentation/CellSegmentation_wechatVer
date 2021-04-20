@@ -40,6 +40,7 @@
   "appid": "wxdfe0f07c1596a521",
   "projectname": "cellSegmentation",
   "libVersion": "2.14.1",
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
     "search": {
       "list": []
