@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/indexPage/indexPage",
     "pages/index/index",
+    "pages/indexPage/indexPage",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",
