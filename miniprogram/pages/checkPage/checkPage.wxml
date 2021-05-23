@@ -1,0 +1,66 @@
+
+<view class="page" style="height:100%;width:100%">
+  
+  <view class="parallel_space_around"
+    style="height:5%">
+    <button 
+        bindtap="giveUp"
+        class="my_button"
+        style="width:100px"
+      >取消
+    </button>
+
+    <button 
+        bindtap="next"
+        class="my_button"
+        style="width:100px"
+    >下一步</button>
+  </view>
+
+  <view 
+    class="view_middle"
+    style="height:80%">
+  
+    
+
+  <view class="parallel_right" style="width:45%">
+    <block wx:for="{{parameter}}" wx:key="parameter">
+    <text 
+      class='{{item.checked?"my_little_button_checked":"my_little_button_unchecked"}}' 
+      data-id='{{item.id}}' 
+      bindtap='parameterTap'
+    >{{item.name}}</text>
+    </block>
+  </view>
+
+  <view 
+    class="my_pic"
+    style="height:80%"
+    >
+    <block wx:for="{{parameter}}" wx:key="parameter">
+      <image 
+      style="height:100%; width:100%"
+      wx:if="{{item.checked == 1 }}"
+      src="{{item.src}}"
+      mode="aspectFit"></image>
+    
+    </block>
+
+  
+  </view>
+  
+
+
+  </view>
+
+  <view class="parallel_bottom" style="width:100%;height:100%">
+    <text class="this_step_button" style="width:10%;height:10%">1</text>
+    <text class="not_this_step_button" style="width:10%;height:10%">2</text>
+    <text class="not_this_step_button" style="width:10%;height:10%">3</text>
+    <text class="not_this_step_button" style="width:10%;height:10%">4</text>
+
+    
+  </view>
+
+
+</view>
