@@ -14,6 +14,9 @@ Page({
   },
 
   onLoad: function() {
+    wx.getUserProfile({
+      desc: 'desc',
+    })
     if (!wx.cloud) {
       wx.redirectTo({
         url: '../chooseLib/chooseLib',

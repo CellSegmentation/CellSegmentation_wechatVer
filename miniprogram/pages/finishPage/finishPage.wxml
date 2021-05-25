@@ -1,23 +1,26 @@
-
 <view class="page" style="height:100%;width:100%">
   
   <view class="parallel_space_around"
     style="height:5%">
-    <navigator 
-      class="my_button"
-      style="width:100px;margin-right:5%"
-      url="../indexPage/indexPage" 
-      open-type="redirect" 
-      hover-class="other-navigator-hover">取消</navigator>
+    <button 
+        bindtap="giveUp"
+        class="my_button"
+        style="margin-left:3%"
+      >取消
+    </button>
+
+    <button 
+        bindtap="giveUp"
+        class="my_button"
+      >上一步
+    </button>
 
 
-    <navigator 
-      class="my_button"
-      style="width:100px;margin-right:5%"
-      url="../adjustPage/adjustPage" 
-      open-type="navigate" 
-      hover-class="navigator-hover">下一步</navigator>
-
+    <button 
+        bindtap="next"
+        class="my_button"
+        style="margin-right:3%"
+    >完成</button>
   </view>
 
   <view 
@@ -57,9 +60,9 @@
   </view>
 
   <view class="parallel_bottom" style="width:100%;height:100%">
-    <text class="this_step_button" style="width:10%;height:10%">1</text>
+    <text class="not_this_step_button" style="width:10%;height:10%">1</text>
     <text class="not_this_step_button" style="width:10%;height:10%">2</text>
-    <text class="not_this_step_button" style="width:10%;height:10%">3</text>
+    <text class="this_step_button" style="width:10%;height:10%">3</text>
 
     
   </view>

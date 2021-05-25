@@ -1,7 +1,9 @@
 Page({
   data: {
     parameter: [
-      { id: 1, name: '原图' ,src:"cloud://cloud1-1gc9t63z101935b3.636c-cloud1-1gc9t63z101935b3-1305472261/2.png"}]
+      { id: 1, name: '原图' ,src:"cloud://cloud1-1gc9t63z101935b3.636c-cloud1-1gc9t63z101935b3-1305472261/2.png"}, 
+      { id: 2, name: '二值图' ,src:"cloud://cloud1-1gc9t63z101935b3.636c-cloud1-1gc9t63z101935b3-1305472261/origin.png"}]
+      //模拟商品参数数据，如果是线上版本需要自行发起request请求
   },
 
   onLoad: function (options) {

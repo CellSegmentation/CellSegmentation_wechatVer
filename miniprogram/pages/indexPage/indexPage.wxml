@@ -36,12 +36,12 @@
 
 <!-- 上传图片 -->
 <view class="uploader">
-  <view class="uploader-text" bindtap="doUpload">
-    <text>上传细胞图片</text>
-  </view>
-  <view class="uploader-container" wx:if="{{imgUrl}}">
-    <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
-  </view>
+  <navigator 
+  class="uploader-text"
+  url="../cropper/cropper" 
+  open-type="navigate" 
+  hover-class="navigator-hover">上传细胞图片</navigator>
+  
 </view>
 
 <view class="uploader">

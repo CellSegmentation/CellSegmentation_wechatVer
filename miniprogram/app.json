@@ -1,8 +1,11 @@
 {
   "pages": [
-    "pages/checkPage/checkPage",
     "pages/indexPage/indexPage",
     "pages/index/index",
+    "pages/cropper/cropper",
+    "pages/adjustPage/adjustPage",
+    "pages/checkPage/checkPage",
+    "pages/finishPage/finishPage",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",
@@ -23,6 +26,5 @@
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "sitemapLocation": "sitemap.json"
 }
