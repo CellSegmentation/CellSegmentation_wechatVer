@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/indexPage/indexPage",
-    "pages/index/index",
-    "pages/cropper/cropper",
-    "pages/adjustPage/adjustPage",
     "pages/checkPage/checkPage",
+    "pages/indexPage/indexPage",
+    "pages/cropper/cropper",
+    "pages/index/index",
+    "pages/adjustPage/adjustPage",
     "pages/finishPage/finishPage",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
