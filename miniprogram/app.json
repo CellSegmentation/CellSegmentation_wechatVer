@@ -1,11 +1,12 @@
 {
   "pages": [
     "pages/indexPage/indexPage",
+    "pages/myPage/myPage",
+    "pages/finishPage/finishPage",
+    "pages/checkPage/checkPage",
     "pages/index/index",
     "pages/cropper/cropper",
     "pages/adjustPage/adjustPage",
-    "pages/checkPage/checkPage",
-    "pages/finishPage/finishPage",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",

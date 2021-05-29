@@ -3,18 +3,19 @@
   
   <view class="parallel_space_around"
     style="height:5%">
-    <button 
-        bindtap="giveUp"
-        class="my_button"
-        style="width:100px;margin-left:5%"
-      >取消
-    </button>
+    <navigator 
+      class="my_button"
+      style="width:100px;margin-right:5%"
+      url="../indexPage/indexPage" 
+      open-type="redirect" 
+      hover-class="other-navigator-hover">取消</navigator>
 
-    <button 
-        bindtap="next"
-        class="my_button"
-        style="width:100px;margin-right:5%"
-    >下一步</button>
+    <navigator 
+      class="my_button"
+      style="width:100px;margin-right:5%"
+      url="../finishPage/finishPage" 
+      open-type="navigate" 
+      hover-class="navigator-hover">下一步</navigator>
   </view>
 
   

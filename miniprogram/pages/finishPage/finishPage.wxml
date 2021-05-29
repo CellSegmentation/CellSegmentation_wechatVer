@@ -2,25 +2,19 @@
   
   <view class="parallel_space_around"
     style="height:5%">
-    <button 
-        bindtap="giveUp"
-        class="my_button"
-        style="margin-left:3%"
-      >取消
-    </button>
+    <navigator 
+      class="my_button"
+      style="width:100px;margin-right:5%"
+      url="../indexPage/indexPage" 
+      open-type="redirect" 
+      hover-class="other-navigator-hover">取消</navigator>
 
-    <button 
-        bindtap="giveUp"
-        class="my_button"
-      >上一步
-    </button>
-
-
-    <button 
-        bindtap="next"
-        class="my_button"
-        style="margin-right:3%"
-    >完成</button>
+      <navigator 
+      class="my_button"
+      style="width:100px;margin-right:5%"
+      url="../indexPage/indexPage" 
+      open-type="navigate" 
+      hover-class="navigator-hover">下一步</navigator>
   </view>
 
   <view 
@@ -29,7 +23,7 @@
   
     
 
-  <view class="parallel_right" style="width:45%">
+  <view class="parallel_right" style="width:65%">
     <block wx:for="{{parameter}}" wx:key="parameter">
     <text 
       class='{{item.checked?"my_little_button_checked":"my_little_button_unchecked"}}' 

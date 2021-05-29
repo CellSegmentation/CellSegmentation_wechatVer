@@ -14,6 +14,54 @@ Page({
   },
 
   onLoad: function() {
+    wx.showLoading({
+      title: '登录中'
+    })
+    wx.getSetting({
+      success: res => {
+        console.log(res)
+        if (res.authSetting['scope.userInfo'] === true) { // 成功授权
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
+          wx.getUserInfo({
+            success: res => {
+              console.log(res)
+              this.setUserInfoAndNext(res)
+            },
+            fail: res => {
+              console.log(res)
+            }
+          })
+        } else if (res.authSetting['scope.userInfo'] === false) { // 授权弹窗被拒绝
+          wx.openSetting({
+            success: res => {
+              console.log(res)
+            },
+            fail: res => {
+              console.log(res)
+            }
+          })
+        } else { // 没有弹出过授权弹窗
+          wx.getUserInfo({
+            success: res => {
+              console.log(res)
+              this.setUserInfoAndNext(res)
+            },
+            fail: res => {
+              console.log(res)
+              wx.openSetting({
+                success: res => {
+                  console.log(res)
+                },
+                fail: res => {
+                  console.log(res)
+                }
+              })
+            }
+          })
+        }
+      }
+    })
+
     if (!wx.cloud) {
       wx.redirectTo({
         url: '../chooseLib/chooseLib',

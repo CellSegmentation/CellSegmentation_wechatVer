@@ -167,8 +167,7 @@ page {
   display: flex;
   flex-direction: row;
   justify-content:right;
-  margin-left: 50%;
-  margin-right: auto;
+  margin-right: 0%;
   padding: 2%;
 }
 

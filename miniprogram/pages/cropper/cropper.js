@@ -115,21 +115,37 @@ Page({
             }
             this.cropper.setLimitMove(e.detail.value);
         },
+        onGetOpenid: function() {
+            // 调用云函数
+            wx.cloud.callFunction({
+              name: 'login',
+              data: {},
+              success: res => {
+                console.log('[云函数] [login] user openid: ', res.result.openid)
+                app.globalData.openid = res.result.openid
+                wx.navigateTo({
+                  url: '../userConsole/userConsole',
+                })
+              },
+              fail: err => {
+                console.error('[云函数] [login] 调用失败', err)
+                wx.navigateTo({
+                  url: '../deployFunctions/deployFunctions',
+                })
+              }
+            })
+          },
         submit() {
             this.cropper.getImg((obj) => {
                 app.globalData.imgSrc = obj.url;
                 console.log(obj.url);
-                wx.getUserProfile({
-                    desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-                    success: (res) => {
-                      this.setData({
-                        avatarUrl: res.userInfo.avatarUrl,
-                        userInfo: res.userInfo,
-                        hasUserInfo: true,
-                      })
-                      console.log(res);
-                    }
-                  })
+                wx.setStorage({
+                    key:"temp_origin",
+                    data:obj.url
+                })
+                wx.redirectTo({
+                    url:"../checkPage/checkPage"
+                })
             });
         },
         rotate() {
@@ -140,7 +156,7 @@ Page({
             this.data.top = setInterval(() => {
                 this.cropper.setTransform({
                     y: -3
-                });
+                }); 
             }, 1000 / 60)
         },
         bottom() {
