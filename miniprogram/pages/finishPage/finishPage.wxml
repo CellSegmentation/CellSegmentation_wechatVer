@@ -13,15 +13,16 @@
       class="my_button"
       style="width:100px;margin-right:5%"
       url="../indexPage/indexPage" 
-      open-type="navigate" 
-      hover-class="navigator-hover">下一步</navigator>
+      open-type="redirect" 
+      hover-class="redirect"
+      bindtap="uploadPic" 
+      type="primary"
+      >完成</navigator>
   </view>
 
   <view 
     class="view_middle"
     style="height:75%">
-  
-    
 
   <view class="parallel_right" style="width:65%">
     <block wx:for="{{parameter}}" wx:key="parameter">
@@ -42,7 +43,10 @@
       style="height:100%; width:100%"
       wx:if="{{item.checked == 1 }}"
       src="{{item.src}}"
-      mode="aspectFit"></image>
+      mode="aspectFit"
+      bindlongpress="saveImage"
+      data-url="{{item.src}}"
+      ></image>
     
     </block>
 

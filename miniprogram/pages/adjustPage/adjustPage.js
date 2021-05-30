@@ -32,6 +32,7 @@ Page({
       }
     })
   },
+
    // 参数点击响应事件
   parameterTap:function(e){//e是获取e.currentTarget.dataset.id所以是必备的，跟前端的data-id获取的方式差不多
     var that=this

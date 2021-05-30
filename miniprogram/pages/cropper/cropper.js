@@ -1,3 +1,5 @@
+
+
 //获取应用实例
 const app = getApp()
 Page({
@@ -138,9 +140,8 @@ Page({
         submit() {
             this.cropper.getImg((obj) => {
                 app.globalData.imgSrc = obj.url;
-                console.log(obj.url);
                 wx.setStorage({
-                    key:"temp_origin",
+                    key:"temp_binary",
                     data:obj.url
                 })
                 wx.redirectTo({

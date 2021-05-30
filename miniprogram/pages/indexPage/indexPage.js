@@ -1,16 +1,24 @@
+
+
 //index.js
 const app = getApp()
 
 Page({
   data: {
+    myButtonUrl:'./myButton.png',
     avatarUrl: './user-unlogin.png',
+    myBackgroundUrl:'./房子.gif',
     userInfo: {},
     hasUserInfo: false,
     logged: false,
     takeSession: false,
     requestResult: '',
     canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('false') // 如需尝试获取用户信息可改为false
+    canIUseOpenData: wx.canIUse('true') // 如需尝试获取用户信息可改为false
+  },
+
+  onShow: function(){
+    wx.hideHomeButton()
   },
 
   onLoad: function() {
@@ -37,6 +45,7 @@ Page({
           userInfo: res.userInfo,
           hasUserInfo: true,
         })
+        console.log(res.userInfo)
       }
     })
   },
@@ -57,6 +66,7 @@ Page({
         userInfo: e.detail.userInfo,
         hasUserInfo: true,
       })
+      console.log(userInfo)
     }
   },
 

@@ -1,6 +1,5 @@
 
 <view class="page" style="height:100%;width:100%">
-  
   <view class="parallel_space_around"
     style="height:5%">
     <navigator 
@@ -9,23 +8,16 @@
       url="../indexPage/indexPage" 
       open-type="redirect" 
       hover-class="other-navigator-hover">取消</navigator>
-
-
     <navigator 
       class="my_button"
       style="width:100px;margin-right:5%"
       url="../adjustPage/adjustPage" 
       open-type="navigate" 
-      hover-class="navigator-hover">下一步</navigator>
-
+      hover-class="navigator-hover" catchtap="mytest">下一步</navigator>
   </view>
-
   <view 
     class="view_middle"
     style="height:75%">
-  
-    
-
   <view class="parallel_right" style="width:45%">
     <block wx:for="{{parameter}}" wx:key="parameter">
     <text 
@@ -46,23 +38,12 @@
       wx:if="{{item.checked == 1 }}"
       src="{{item.src}}"
       mode="aspectFit"></image>
-    
-    </block>
-
-  
+    </block>  
   </view>
-  
-
-
   </view>
-
   <view class="parallel_bottom" style="width:100%;height:100%">
     <text class="this_step_button" style="width:10%;height:10%">1</text>
     <text class="not_this_step_button" style="width:10%;height:10%">2</text>
     <text class="not_this_step_button" style="width:10%;height:10%">3</text>
-
-    
   </view>
-
-
 </view>

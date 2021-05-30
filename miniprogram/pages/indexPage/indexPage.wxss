@@ -77,7 +77,14 @@ page {
   box-sizing: border-box;
 }
 
-.uploader-text, .tunnel-text {
+.uploader-text {
+  width: 100%;
+  line-height: 52px;
+  font-size: 20px;
+  color: #007aff;
+}
+
+.tunnel-text {
   width: 100%;
   line-height: 52px;
   font-size: 34rpx;
@@ -160,3 +167,14 @@ page {
   word-break: break-all;
 }
 
+
+
+.my_upload_button{
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border:none;
+  text-align: center;
+  line-height: 200px;
+  
+}
