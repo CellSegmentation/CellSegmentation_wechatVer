@@ -1,13 +1,4 @@
 {
-<<<<<<< HEAD
-  "pages":[
-    "pages/finishPage/finishPage",
-    "pages/indexPage/indexPage",
-    "pages/checkPage/checkPage",
-    "pages/cropper/cropper",
-    "pages/index/index",
-    "pages/adjustPage/adjustPage",
-=======
   "pages": [
     "pages/checkPage/checkPage",
     "pages/indexPage/indexPage",
@@ -16,7 +7,6 @@
     "pages/adjustPage/adjustPage",
     "pages/finishPage/finishPage",
     "pages/userConsole/userConsole",
->>>>>>> main
     "pages/storageConsole/storageConsole",
     "pages/openapi/openapi",
     "pages/openapi/serverapi/serverapi",
