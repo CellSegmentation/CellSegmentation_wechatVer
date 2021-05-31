@@ -22,6 +22,7 @@ Page({
   },
 
   onLoad: function() {
+    wx.hideHomeButton()
     if (!wx.cloud) {
       wx.redirectTo({
         url: '../chooseLib/chooseLib',

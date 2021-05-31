@@ -141,7 +141,7 @@ Page({
             this.cropper.getImg((obj) => {
                 app.globalData.imgSrc = obj.url;
                 wx.setStorage({
-                    key:"temp_binary",
+                    key:"temp_origin",
                     data:obj.url
                 })
                 wx.redirectTo({

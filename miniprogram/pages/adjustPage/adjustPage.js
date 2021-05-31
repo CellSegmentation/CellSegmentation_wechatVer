@@ -49,5 +49,33 @@ Page({
     that.setData({
       parameter: parameterList
     })
+  },
+  giveup(){
+    wx.showModal({
+      title: '提示',
+      content: '确定放弃操作图片？图片不会保存。',
+      success (res) {
+        if (res.confirm) {
+          wx.redirectTo({
+          url: '../indexPage/indexPage',
+          success: function(res){},
+          fail: function() {},
+          complete: function() {}
+        })
+        } else if (res.cancel) {
+        }
+      }
+    })
+  },
+  showresult(){
+    wx.showModal({
+    title: '图片分割完成！',
+    content: '长按细胞图片进行保存',
+    success(res) {},
+    fail(res) {},
+    showCancel: false,
+    confirmText: "确定"
+  })
+
   }
 })

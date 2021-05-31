@@ -167,54 +167,55 @@ page {
 .parallel_right{
   display: flex;
   flex-direction: row;
-  justify-content:right;
-  margin-right: 0%;
-  padding: 2%;
+  justify-content:center;
+  align-items: center;
 }
 
 
 .my_button {
-  width:25%;
+  height: 25px;
+  width: 100px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #007aff; /* Green */
+  background-color: #3DD5AD !important;
   border-radius: 5px;
   color: white;
-  font-size: auto;
+  font-size: 16px !important;
   text-align: center;
+  align-self: center;
   display: inline-block;
-  line-height: 100%;
-  padding:5px;
 }
 
 
 .my_little_button_checked {
   width: 30%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color:royalblue; /* Green */
-  color: white;
+  background-color: #ece5e1 !important; 
+  color: #9f9ce5 !important;
+  border: 0 solid #ffffff !important;
   font-size: 12px;
   text-align: center;
-  margin-left: auto;
-  margin-right: 10px;
   display: inline-block;
   border-radius: 5px;
   line-height: 100%;
+  align-self: center;
   padding:5px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .my_little_button_unchecked {
   width: 30%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: cornflowerblue; /* Green */
-  color: white;
+  background-color: #f6f1f1  !important; 
+  color: #9f9ce5 !important;
+  border: 0 solid #ffffff !important;
   font-size: 12px;
   text-align: center;
-  margin-left: auto;
-  margin-right: 10px;
   display: inline-block;
   border-radius: 5px;
+  align-self: center;
   line-height: 100%;
   padding:5px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 
@@ -245,7 +246,7 @@ page {
 .this_step_button{
   width: 40px !important;
   height:40px !important;
-  background-color: sandybrown;
+  background-color: #9f9ce5 !important;
   border: 0 solid #ffffff;
   border-radius: 100px;
   font-size:15px;
@@ -258,7 +259,7 @@ page {
 .not_this_step_button{
   width: 40px !important;
   height:40px !important;
-  background-color:peachpuff;
+  background-color:#dbdaea !important;
   border: 0 solid #ffffff;
   border-radius: 100px;
   font-size:15px;

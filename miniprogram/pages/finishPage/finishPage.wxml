@@ -4,10 +4,8 @@
     style="height:5%">
     <navigator 
       class="my_button"
-      style="width:100px;margin-right:5%"
-      url="../indexPage/indexPage" 
-      open-type="redirect" 
-      hover-class="other-navigator-hover">取消</navigator>
+      bindtap="giveup"
+      style="width:100px;margin-right:5%">取消</navigator>
 
       <navigator 
       class="my_button"
@@ -24,12 +22,13 @@
     class="view_middle"
     style="height:75%">
 
-  <view class="parallel_right" style="width:65%">
+  <view class="parallel_right" style="width:100%">
     <block wx:for="{{parameter}}" wx:key="parameter">
     <text 
       class='{{item.checked?"my_little_button_checked":"my_little_button_unchecked"}}' 
       data-id='{{item.id}}' 
       bindtap='parameterTap'
+      style="width:70px !important"
     >{{item.name}}</text>
     </block>
   </view>

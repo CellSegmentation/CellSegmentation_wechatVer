@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/checkPage/checkPage",
-    "pages/indexPage/indexPage",
-    "pages/cropper/cropper",
-    "pages/index/index",
     "pages/adjustPage/adjustPage",
     "pages/finishPage/finishPage",
+    "pages/cropper/cropper",
+    "pages/checkPage/checkPage",
+    "pages/indexPage/indexPage",
+    "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/openapi/openapi",

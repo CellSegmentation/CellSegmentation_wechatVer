@@ -11,9 +11,9 @@
         </image-cropper>
     </view>
     <view class="parallel_space_around" style="height:15%">
-        <button class="my_button" catchtouchstart='rotate' catchtouchend='end' data-type="rotate">旋转</button>
-        <button class="my_button" catchtap='upload'>重新上传</button>
-        <button class="my_button" catchtap="submit">确定</button>
+        <button class="my_button" catchtouchstart='rotate' catchtouchend='end' data-type="rotate" style="font-size:13px !important;line-height:25px">旋转</button>
+        <button class="my_button" catchtap='upload' style="font-size:13px !important;line-height:25px">重新上传</button>
+        <button class="my_button" catchtap="submit" style="font-size:13px !important;line-height:25px">确定</button>
     </view>
     <view style="height: 1px;"></view>
 
